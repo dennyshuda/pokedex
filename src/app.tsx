@@ -1,9 +1,16 @@
 import "./index.css";
+import { Navbar } from "./components/navbar";
+import { Search } from "./components/search";
 
 function App() {
   return (
     <div className="App">
-      <h1 className="text-2xl font-bold underline">Hello world!</h1>
+      <div className="bg-slate-200 py-10">
+        <div className="container mx-auto">
+          <Navbar />
+          <Search />
+        </div>
+      </div>
     </div>
   );
 }
